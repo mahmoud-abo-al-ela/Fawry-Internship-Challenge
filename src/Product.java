@@ -26,9 +26,6 @@ public class Product implements Shippable{
     }
 
     public void reduceQuantity(int amount){
-        if (amount > quantity){
-            throw new IllegalArgumentException("No enough quantity in stock");
-        }
         quantity -= amount;
     }
     public boolean isExpirable(){

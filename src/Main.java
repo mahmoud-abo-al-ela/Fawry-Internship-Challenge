@@ -11,8 +11,8 @@ public class Main {
         Customer customer = new Customer("Mahmoud", 2000);
         Cart cart = new Cart();
         cart.add(tv, 3);
-        cart.add(cheese, 2);
         cart.add(biscuits, 1);
+        cart.add(cheese, 5);
         cart.add(scratchCard, 1);
         Checkout.checkout(customer,cart);
     }

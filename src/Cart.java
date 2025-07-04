@@ -10,10 +10,10 @@ public class Cart{
             throw new IllegalArgumentException("Product Expired: "+ product.getName());
         }
         if (quantity <= 0){
-            throw new IllegalArgumentException("quantity cannot be negative");
+            throw new IllegalArgumentException("quantity cannot be negative in: " + product.getName());
         }
         if (currentQty + quantity > product.getQuantity()){
-            throw new IllegalArgumentException("Not enough stock for product: " + product.getName());
+            throw new IllegalArgumentException("No enough quantity in stock for: " + product.getName());
         }
         items.put(product, currentQty+quantity);
     }
